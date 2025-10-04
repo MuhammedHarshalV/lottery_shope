@@ -17,6 +17,7 @@ class _AccountscreenState extends State<Accountscreen> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        backgroundColor: Colorcontsance.white,
         appBar: AppBar(
           centerTitle: true,
           title: Text(

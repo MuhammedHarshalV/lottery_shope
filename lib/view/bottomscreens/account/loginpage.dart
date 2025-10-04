@@ -13,46 +13,49 @@ class Loginpage extends StatefulWidget {
 class _LoginpageState extends State<Loginpage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: Text(
-          'Login Page',
-          style: GoogleFonts.orbitron(
-            color: Colorcontsance.white,
-            fontWeight: FontWeight.bold,
+    return SafeArea(
+      child: Scaffold(
+        backgroundColor: Colorcontsance.white,
+        appBar: AppBar(
+          centerTitle: true,
+          title: Text(
+            'Login Page',
+            style: GoogleFonts.orbitron(
+              color: Colorcontsance.white,
+              fontWeight: FontWeight.bold,
+            ),
           ),
+          backgroundColor: Colorcontsance.red,
         ),
-        backgroundColor: Colorcontsance.red,
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Column(
-          spacing: 10,
-          children: [
-            Adverticement(),
-            Divider(color: Colorcontsance.red, thickness: 5),
-            textfielddetails(hinttext: 'Username'),
-            textfielddetails(hinttext: 'Password'),
-            textfielddetails(hinttext: 'Registerd Phone Number'),
-            textfielddetails(hinttext: 'OTP'),
-            Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                color: Colorcontsance.blue,
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Text(
-                  'Login',
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    color: Colorcontsance.white,
+        body: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            spacing: 10,
+            children: [
+              Adverticement(),
+              Divider(color: Colorcontsance.red, thickness: 5),
+              textfielddetails(hinttext: 'Username'),
+              textfielddetails(hinttext: 'Password'),
+              textfielddetails(hinttext: 'Registerd Phone Number'),
+              textfielddetails(hinttext: 'OTP'),
+              Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: Colorcontsance.blue,
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    'Login',
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colorcontsance.white,
+                    ),
                   ),
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
