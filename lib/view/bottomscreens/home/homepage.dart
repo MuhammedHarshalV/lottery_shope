@@ -13,6 +13,7 @@ class Homepage extends StatefulWidget {
 class _HomepageState extends State<Homepage> {
   List ticketnumber = [];
   TextEditingController ticketender = TextEditingController();
+  TextEditingController priceenter = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -105,6 +106,14 @@ class _HomepageState extends State<Homepage> {
             controller: ticketender,
             decoration: InputDecoration(
               hintText: 'Add Ticket Number',
+              hintStyle: TextStyle(color: Colorcontsance.red),
+              border: InputBorder.none,
+            ),
+          ),
+          TextField(
+            controller: priceenter,
+            decoration: InputDecoration(
+              hintText: 'Ticket Price',
               hintStyle: TextStyle(color: Colorcontsance.red),
               border: InputBorder.none,
             ),

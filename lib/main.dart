@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:lottery_shope/view/bottomscreens/Progress/progresspage.dart';
 import 'package:lottery_shope/view/bottomscreens/account/accountscreen.dart';
+import 'package:lottery_shope/view/bottomscreens/bottomnavscreen.dart';
 import 'package:lottery_shope/view/bottomscreens/home/homepage.dart';
 
 void main() {
@@ -16,6 +18,9 @@ class Shopeapp extends StatefulWidget {
 class _ShopeappState extends State<Shopeapp> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: Homepage());
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Bottomnavscreen(),
+    );
   }
 }
